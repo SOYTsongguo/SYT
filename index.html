@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYT官网</title>
+  <style>
+  .tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+	  width: 200px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab:hover {
+  background-color: #555;
+}
+.sub-list {
+ display: none;
+  position: absolute;
+  background-color: #555;
+  padding: 10px
+
+}
+
+.tab:hover .sub-list {
+  display: block;
+}
+
+  
+   .red-underline {
+      text-decoration: underline;
+      text-decoration-color: red;
+    }
+
+    .blue-underline {
+      text-decoration: underline;
+      text-decoration-color: blue;
+    }
+  
+  
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, pink, blue);
+      margin: 0;
+      padding: 0;
+    }
+
+        /* New styles for search box */
+    .search-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+
+    .search-button {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .artwork {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .artwork:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .artwork img {
+      max-width: 100%;
+      height: auto;
+    }
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SYT官网</h1>
+  </header>
+
+  <main>
+  <div class="tabs">
+  <div class="tab">曲奇系列<ul class="sub-list">
+    <li> <div class="artwork" onclick="goToNewPage('https://www.123684.com/s/PFSYjv-5iWvd')">手机版1.0</li>
+    <li> <div class="artwork" onclick="goToNewPage('https://www.123684.com/s/PFSYjv-yiWvd')">电脑版3.0.1</li>
+    <li> <div class="artwork" onclick="goToNewPage('https://www.123684.com/s/PFSYjv-1jWvd')">BOSS模式速通记录</li>
+  </ul></div>
+  <div class="tab">暂无内容</div>
+  <div class="tab">暂无内容</div>
+</div>
+    <h2>所有游戏均免费,版权为SYT所有,游戏及游戏内容未经允许不得抄袭搬运,违者后果自负!</h2>
+    </main>
+     <footer>
+    <p>&copy; 2024 SYT GAMES. All rights reserved.</p>
+    <p>作者邮箱: 1958733150@qq.com</p>
+  </footer>
+  <script>
+  function goToNewPage(url) {
+    window.location.href = url;
+  }
+</script>
+    
+   
+</body>
+</html>
